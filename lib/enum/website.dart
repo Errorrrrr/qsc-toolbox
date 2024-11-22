@@ -1,4 +1,5 @@
 enum Website {
+  login,
   oms,
 }
 
@@ -13,6 +14,8 @@ extension WebsiteExtension on Website {
     switch (this) {
       case Website.oms:
         return WebsiteInfo('oms');
+      case Website.login:
+        return WebsiteInfo('login');
     }
   }
 }
